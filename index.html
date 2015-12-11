@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="javascript/javascript.js"></script>
+		<title>Solent Supplies</title>
+		<style>
+		#header{height:108px;}
+		#main{position:relative;}
+		body{background-color:#3B8483;}
+		h3
+		{
+			top: 20px;
+			width: 100%;
+			margin:0 auto;
+			text-align: center;
+		}
+		.homecontent
+		{
+			border0px solid orange;
+			display:inline-block;
+			position: relative;
+			top:10px;
+			left:270px;
+			width:50%;
+			margin: 0 auto;
+			height:94px;
+			max-width:142px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo"><a href="index.html"><img src="images/logoandtext.png" alt="logo" style="border:none;"></a></div> <!--IE fix-->
+				<div id="search">
+					<div id="centeraligned">
+						<span id="whiteText">Change colour scheme:</span><br />
+						<a href=javascript:void(0) onClick="colourChange('75C7E0','blue')"><div class="colorChangeButtons" id="blue"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E07582','red')"><div class="colorChangeButtons" id="red"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('75E093','green')"><div class="colorChangeButtons" id="green"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E0A475','orange')"><div class="colorChangeButtons" id="orange"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('BAE075','lime')"><div class="colorChangeButtons" id="lime"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('8675E0','purple')"><div class="colorChangeButtons" id="purple"></div></a>
+						<a href=javascript:void(0) onClick="getDefaultColour()"><div class="colorChangeButtons" id="default" style="background-color:#3B8483;"></div></a>
+					</div>
+					<input type="text"><button>Search</button>
+				</div>
+			</div>
+			<div id="main">
+			
+				<div id="banner"><a href="corporate/products.html"><img src="images/stationeryBanner.png" alt="" width=100% style="border:none;"></a></div>
+				<div class="homecontent"><a href="corporate/about.html"><img src="images/corpSelectOn.png" style="border:none;"><!--IE fix--><h3>Click for <br />Corporate Site</h3></a></div>
+				<div class="homecontent" ><a href="family/products.html" style="margin-left:30px;"><img src="images/famSelectOn.png" style="border:none;"><!--IE fix--><h3 style="left:30px;">Click for <br />Family Site</h3></a></div>
+				<div id="footer">
+					<div id="footerleft">
+						<strong>Customer Services</strong>
+						<p><a href="corporate/help.html">Help</a><br />
+						<a href="corporate/contact.html">Contact us</a><br />
+						<a href="corporate/sitemap.html">Sitemap</a></p>
+					</div>
+					<div id="footermiddle">
+						<strong>Corporate Info</strong>
+						<p><a href="index.html">Home</a><br />
+						<a href="corporate/about.html">About us</a></p>
+					</div>
+					<div id="footerright">
+						<strong>Policies</strong>
+						<p><a href="corporate/terms.html">Terms and Conditions</a><br />
+						<a href="corporate/faq.html">FAQ</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

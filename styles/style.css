@@ -1,0 +1,223 @@
+body
+{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+	overflow-y: scroll;
+}
+h3
+{
+	position:absolute; 
+	top:0;
+	left:0; 
+	width:100%; 
+}
+a:link {text-decoration:none;color:black;}
+a:visited {text-decoration:none;color:black;}
+a:hover {text-decoration:none;color:black;}
+a:active {text-decoration:none;background-color:transparent;}  /* background-color:transparent IE fix (again) */
+#wrapper
+{
+	border:0px solid black;
+	width:900px;
+	min-height:600px;
+	margin:0 auto;
+	position:relative;
+	
+}
+#header
+{
+	border:0px solid pink;
+	display:inline-block;
+	height:170px;
+	width:100%;
+	position:relative;
+}
+#search
+{
+	border:0px solid red;
+	position:absolute;
+	display:inline-block;
+	right:0;
+	padding-top:0px;	
+}
+#centeraligned
+{
+	border:0px solid white;
+    text-align: center;
+}
+.colorChangeButtons
+{
+	border:0.15em solid black;
+	width:15px;
+	height:15px;
+	display:inline-block;
+}
+#blue{background-color: #75C7E0;}
+#red{background-color: #E07582;}
+#green{background-color: #75E093;}
+#orange{background-color: #E0A475;}
+#lime{background-color: #BAE075;}
+#purple{background-color: #8675E0;}
+
+
+#logo
+{
+	border:0px solid yellow;
+	display:inline-block;
+	position:relative;
+	
+}
+
+#navbar
+{
+	border:0px solid blue;
+	position:absolute;
+	display:inline; /*put as inline-block if shit hits*/
+	min-width:100%;
+	max-width:120%;
+	bottom:0;
+	left:0;
+	max-height:62px;
+	
+}
+.cnavbaritem
+{
+	margin-right:-4px;
+	display:inline-block;
+	height:62px;
+	text-align:center;
+	position:relative;
+	width:180px;
+	
+}
+
+.cnavbaritem:hover {
+    
+}
+#cnavbaritem
+{
+	margin-right:-4px;
+	display:inline-block;
+	height:62px;
+	text-align:center;
+	position:relative;
+	width:180px;
+	
+}
+#main
+{
+	position:relative;
+	border:0px solid orange;
+	background-color:#EBEBEB;
+	min-height:500px;
+	width:100%;
+	display:inline-block;
+}
+#content
+{
+	border:0px solid red;
+	display:inline-block;
+	width: calc(100% - 20px);
+	min-height:300px;
+	margin:10px;
+	padding:1px;
+	
+}
+#products
+{
+	border:0px solid green;
+	display:inline-block;
+	/*position:absolute;*/
+	width: 69%;
+	height:350px;
+	margin:10px;
+	padding:1px;
+	background-color: lightgray;
+	
+}
+#iframe
+{
+}
+
+.category
+{
+	border:0px solid blue;
+	background-color:white;
+	width:213px;
+	height:20px;
+	margin:5px;
+	font-weight:bold;
+}
+.product
+{
+	border:0px solid blue;
+	background-color:white;
+	width:30%;
+	height:150px;
+	margin:5px;
+	display:inline-block;
+	
+}
+.guessgame
+{
+	width: 84px;
+	height: 84px;
+	margin:10px;
+	background-repeat:no-repeat;
+	background-position:center; 
+	background-image: url('../family/images/guessgame/qmicon.png');
+	
+}
+
+/* #firstButton{background-image: url('../family/images/guessgame/gluestick.png');}
+#secondButton{background-image: url('../family/images/guessgame/pot.png');}
+#thirdButton{background-image: url('../family/images/guessgame/plimsolls.png');}
+#fourthButton{background-image: url('../family/images/guessgame/statset.png');}
+#fifthButton{background-image: url('../family/images/guessgame/books.png');}
+#sixthButton{background-image: url('../family/images/guessgame/shoes.png');}
+#seventhButton{background-image: url('../family/images/guessgame/combopack.png');}
+#eighthButton{background-image: url('../family/images/guessgame/highlighters.png');} */
+#footer
+{
+	border-top:2px solid lightgray;
+	display:inline-block;
+	position:relative;
+	width: calc(100% - 20px);
+	height:160px;
+	margin:10px;
+}
+#footerleft
+{
+	border-right:2px solid lightgray;
+	display:inline-block;
+	width:calc(33% - 60px);
+	height:calc(100% - 60px);
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	padding:20px;
+	vertical-align:top;
+}
+#footermiddle
+{
+	border-right:2px solid lightgray;
+	display:inline-block;
+	width:calc(33% - 60px);
+	height:calc(100% - 60px);
+	margin:10px;
+	padding:20px;
+	vertical-align:top;
+}
+#footerright
+{
+	border:0px solid black;
+	display:inline-block;
+	width:calc(33% - 60px);
+	height:calc(100% - 60px);
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:10px;
+	padding:20px;
+	vertical-align:top;
+}
+#whiteText{color: white;}

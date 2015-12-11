@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<script src="../javascript/javascript.js"></script>
+		<link href="../styles/style.css" rel="stylesheet" type="text/css">
+		<title>Activities - Solent Supplies</title>
+		<style>
+		body{background-color:#C24848;}
+		.cnavbaritem{width:300px;background:url('../images/famNavOff.png');}
+		.cnavbaritem:hover{width:300px;background:url('../images/famNavOn.png');}
+		#cnavbaritem{width:300px;background:url('../images/famNavOn.png');}
+		.feedback{color:#C24848;}
+		p>input{display:inline-block;margin-top: .5em;}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo"><a href="../index.html"><img src="../images/logoandtext.png" alt="logo" style="border:none;"></a></div>
+				<div id="search">
+					<div id="centeraligned">
+						<span id="whiteText">Change colour scheme:</span><br />
+						<a href=javascript:void(0) onClick="colourChange('75C7E0','blue')"><div class="colorChangeButtons" id="blue"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E07582','red')"><div class="colorChangeButtons" id="red"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('75E093','green')"><div class="colorChangeButtons" id="green"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E0A475','orange')"><div class="colorChangeButtons" id="orange"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('BAE075','lime')"><div class="colorChangeButtons" id="lime"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('8675E0','purple')"><div class="colorChangeButtons" id="purple"></div></a>
+						<a href=javascript:void(0) onClick="getDefaultColour()"><div class="colorChangeButtons" id="default" style="background-color:#C24848;"></div></a>
+					</div>
+					<input type="text"><button>Search</button>
+				</div>
+				<div id="navbar">
+						<a href="products.html"><div class="cnavbaritem"><h3>Products</h3></div></a>
+						<a href="help.html"><div class="cnavbaritem"><h3>Help</h3></div></a>
+						<a href="activities.html"><div id="cnavbaritem"><h3>Activities</h3></div></a>
+						
+						
+				</div>
+			</div>
+			<div id="main">
+				<div id="content">
+					<span feedback>Question 1:</span><br />
+					<p>What percentage sale is on?</p>
+					<p>
+					<label><input type="radio" id="1" name="question1" value="a" />10%</label><br />
+					<label><input type="radio" id="2" name="question1" value="b" />20%</label><br />
+					<label><input type="radio" id="3" name="question1" value="c" />30%</label><br />
+					<label><input type="radio" id="4" name="question1" value="d" />40%</label><br />
+					<span id="question1"> </span>
+					</p><br />
+					<span feedback>Question 2:</span><br />
+					<p>How many product subcategories are on the corporate page?</p>
+					<p>
+					<label><input type="radio" id="1" name="question2" value="a" />1</label><br />
+					<label><input type="radio" id="2" name="question2" value="b" />2</label><br />
+					<label><input type="radio" id="3" name="question2" value="c" />3</label><br />
+					<label><input type="radio" id="4" name="question2" value="d" />4</label><br />
+					<span id="question2"> </span>
+					</p><br />
+					<span feedback>Question 3:</span><br />
+					<p>How many products are on the family products stationery page?</p>
+					<p>
+					<label><input type="radio" id="1" name="question3" value="a" />3</label><br />
+					<label><input type="radio" id="2" name="question3" value="b" />6</label><br />
+					<label><input type="radio" id="3" name="question3" value="c" />7</label><br />
+					<label><input type="radio" id="4" name="question3" value="d" />5</label><br />
+					<span id="question3"> </span>
+					</p><br />
+					<span id="score"></span><br />
+					<input type="button" name="submit" value="Grade" onClick="grade()" /><br />		
+				</div>
+				<div id="footer">
+					<div id="footerleft">
+						<strong>Customer Services</strong>
+						<p><a href="help.html">Help</a><br />
+						<a href="../corporate/contact.html">Contact us</a><br />
+						<a href="../corporate/sitemap.html">Sitemap</a></p>
+					</div>
+					<div id="footermiddle">
+						<strong>Corporate Info</strong>
+						<p><a href="../index.html">Home</a><br />
+						<a href="../corporate/about.html">About us</a></p>
+					</div>
+					<div id="footerright">
+						<strong>Policies</strong>
+						<p><a href="../corporate/terms.html">Terms and Conditions</a><br />
+						<a href="../corporate/faq.html">FAQ</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

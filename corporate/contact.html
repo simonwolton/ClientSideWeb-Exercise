@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<script src="../javascript/javascript.js"></script>
+		<link href="../styles/style.css" rel="stylesheet" type="text/css">
+		<script src="../javascript/javascript.js"></script>
+		<title>Contact Us - Solent Supplies</title>
+		<style>
+		#main{min-height:500px;}
+		
+		body{background-color:#3E76A3;}
+		.cnavbaritem{background: url('../images/corpNavOff.png');}
+		.cnavbaritem:hover{background: url('../images/corpNavOn.png');}
+		#cnavbaritem{background: url('../images/corpNavOn.png');}
+		form div + div{margin-top: .5em;}
+		label 
+		{
+			display: inline-block;
+			width: 90px;
+			text-align: right;
+		}
+		.align>input{width: 200px;}
+		#button{padding-left: 90px;}
+		textarea
+		{
+			height:60px;
+			width:198px;
+		}
+		#msg{margin-left:0px;}
+		
+
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo"><a href="../index.html"><img src="../images/logoandtext.png" alt="logo" style="border:none;"></a></div>
+				<div id="search">
+					<div id="centeraligned">
+						<span id="whiteText">Change colour scheme:</span><br />
+						<a href=javascript:void(0) onClick="colourChange('75C7E0','blue')"><div class="colorChangeButtons" id="blue"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E07582','red')"><div class="colorChangeButtons" id="red"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('75E093','green')"><div class="colorChangeButtons" id="green"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('E0A475','orange')"><div class="colorChangeButtons" id="orange"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('BAE075','lime')"><div class="colorChangeButtons" id="lime"></div></a>
+						<a href=javascript:void(0) onClick="colourChange('8675E0','purple')"><div class="colorChangeButtons" id="purple"></div></a>
+						<a href=javascript:void(0) onClick="getDefaultColour()"><div class="colorChangeButtons" id="default" style="background-color:#3E76A3;"></div></a>
+					</div>
+					<input type="text"><button>Search</button>
+				</div>
+				<div id="navbar">
+						<a href="about.html"><div class="cnavbaritem"><h3>About</h3></div></a>
+						<a href="products.html"><div class="cnavbaritem"><h3>Products</h3></div></a>
+						<a href="help.html"><div class="cnavbaritem"><h3>Help</h3></div></a>
+						<a href="contact.html"><div id="cnavbaritem"><h3>Contact</h3></div></a>
+						<a href="sitemap.html"><div class="cnavbaritem"><h3>Sitemap</h3></div></a>
+				</div>
+			</div>
+			<div id="main">
+				<div id="content">
+					<p>
+					123 Southampton Avenue<br />
+					Southampton<br />
+					S01 9AZ
+					</p>
+					<!--<form name="contactForm" action="somePage.php" onsubmit="return validate()" method="post">-->
+					<form name="contactForm">
+						<div class="align">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name"/>
+						</div>
+						<div class="align">
+							<label for="mail">E-mail:</label>
+							<input type="text" id="mail" name="mail"/>
+						</div>
+						<div>
+							<label for="msg">Enquiry:</label>
+							<textarea id="msg" name="msg"></textarea>
+						</div>
+						<div id="button">
+							<input type="button" value="Create Email" onclick="send()">
+						</div>
+					</form>
+				</div>
+				<div id="footer">
+					<div id="footerleft">
+						<strong>Customer Services</strong>
+						<p><a href="help.html">Help</a><br />
+						<a href="../corporate/contact.html">Contact us</a><br />
+						<a href="../corporate/sitemap.html">Sitemap</a></p>
+					</div>
+					<div id="footermiddle">
+						<strong>Corporate Info</strong>
+						<p><a href="../index.html">Home</a><br />
+						<a href="../corporate/about.html">About us</a></p>
+					</div>
+					<div id="footerright">
+						<strong>Policies</strong>
+						<p><a href="../corporate/terms.html">Terms and Conditions</a><br />
+						<a href="../corporate/faq.html">FAQ</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
